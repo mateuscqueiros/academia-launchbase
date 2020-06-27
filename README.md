@@ -8,7 +8,7 @@ Esse site é um gerenciador de professores de academia. Possui página de cadast
 
 ## 📂 Estrutura
 
-Como o site possui back-end, as pastas foram organizadas para que as ferramentas dessa área funcionem corretamente. A estrutura é a seguinte: assets, scripts e estilos estão na pasta public. Templates para nunjucks em html na pasta views. 🎈
+Como o site possui back-end, as pastas foram organizadas para que as ferramentas dessa área funcionem corretamente. A estrutura é a seguinte: assets, scripts e estilos estão na pasta public. Templates para nunjucks em html na pasta views.
 
 ## 🔨 Ferramentas
 
