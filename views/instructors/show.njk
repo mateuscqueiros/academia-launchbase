@@ -3,38 +3,43 @@
 {% block content %}
 
     <div class="card">
-        <section class="avatar" style="background: url() no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{ instructor.avatar_url }}) no-repeat center center / cover"></section>
         <section class="details">
 
             <h3>Detalhes</h3>
 
             <div class="item">
                 <div>Instrutor</div>
-                <div>Guilherme Saraiva</div>
+                <div>{{ instructor.name }}</div>
             </div>
 
             <div class="item">
                 <div>Idade</div>
-                <div>29</div>
+                <div>{{ instructor.age }}</div>
             </div>
 
             <div class="item">
                 <div>Sexo</div>
-                <div>Masculino</div>
-            </div>
+                <di>{{ "Masculino" if instructor.gender }}</div>
+            </di>
 
             <div class="item">
                 <div>Acompanhamento</div>
                 <div>
-                    <span>Musculação</span>
-                    <span>Crossfit</span>
+                    {% for service in instructor.services %}
+
+                        <span>{{ service }}</span>
+
+                    {% endfor %}
                 </div>
             </div>
 
             <div class="item">
                 <div>Desde</div>
-                <div>01/01/2019</div>
+                <div>{{instructor.created_at}}</div>
             </div>
+
+            <a href="#" class="button">Editar</a>
 
         </section>
     </div>
