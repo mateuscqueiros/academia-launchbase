@@ -20,7 +20,8 @@
 
             <div class="item">
                 <div>Sexo</div>
-                <di>{{ "Masculino" if instructor.gender }}</div>
+                <div>{{ "Masculino" if instructor.gender == "M" }}</div>
+                <div>{{ "Feminino" if instructor.gender == "F" }}</div>
             </di>
 
             <div class="item">
@@ -39,7 +40,7 @@
                 <div>{{instructor.created_at}}</div>
             </div>
 
-            <a href="#" class="button">Editar</a>
+            <a href="/instructors/{{instructor.id}}/edit" class="button">Editar</a>
 
         </section>
     </div>
