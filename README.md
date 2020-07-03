@@ -21,4 +21,4 @@ Como o site possui back-end, as pastas foram organizadas para que as ferramentas
 
 # Licença
 
-Distribuído sob a licença MIT. Veja LICENSe para mais informações.
+Distribuído sob a licença MIT. Veja LICENSE para mais informações.
